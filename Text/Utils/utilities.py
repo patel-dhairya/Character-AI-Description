@@ -6,7 +6,7 @@ def double_quote_list(ls: list) -> str:
         ls (list): List to print
 
     Returns:
-        str: String represnting list elements with each element in double quote
+        str: String representing list elements with each element in double quote
     """
-    formatted_list = ", ".join([f'"{item}"' for item in ls])
+    formatted_list = ",".join([f'"{item}"' for item in ls])
     return f"[{formatted_list}]"

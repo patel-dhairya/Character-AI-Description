@@ -1,3 +1,4 @@
-ls = ["a", "b"]
+from Text.gui import run
 
-print(f"list = {ls}")
+if __name__ == "__main__":
+    run(True)
