@@ -10,3 +10,12 @@ def double_quote_list(ls: list) -> str:
     """
     formatted_list = ",".join([f'"{item}"' for item in ls])
     return f"[{formatted_list}]"
+
+
+def format_key_value(key: str, value) -> str:
+    if isinstance(value, list):
+        return f"\"{key}\":{double_quote_list(value)}"
+    elif isinstance(value, str):
+        return f"\"{key}\":\"{value}\""
+    else:
+        return "Error"
